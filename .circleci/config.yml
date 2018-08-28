@@ -9,8 +9,7 @@ jobs:
             - "25:e3:53:01:7e:53:78:0a:82:0c:d1:7d:a0:64:e2:8d"
       - run:
           name: Deploy Over SSH
-          command: ssh $SSH_USER@$SSH_HOST -p 17536
-                   mkdir testABC
+          command: ssh $SSH_USER@$SSH_HOST -p 17536 "mkdir testABC"
 
 
 workflows:
