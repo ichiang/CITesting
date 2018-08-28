@@ -3,9 +3,6 @@ jobs:
   build:
     machine: 
       enabled: true
-  deploy:
-    machine:
-      enabled: true
     steps:
       - run:
           name: Deploy Over SSH
