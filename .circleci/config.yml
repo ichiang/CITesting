@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     machine: 
-      enabled: true
+      - enabled: true
   deploy:
     machine:
       enabled: true
