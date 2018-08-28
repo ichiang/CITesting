@@ -11,8 +11,8 @@ jobs:
           name: Deploy Over SSH
           command: |
                 ssh $SSH_USER@$SSH_HOST -p 17536 
-                mkdir testABC2
-                mkdir testABC3
+                "mkdir testABC2
+                mkdir testABC3"
 
 
 workflows:
