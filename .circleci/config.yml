@@ -12,6 +12,7 @@ jobs:
           command: |
                 ssh $SSH_USER@$SSH_HOST -p 17536
 
+
 workflows:
   version: 2
   build-and-deploy:
