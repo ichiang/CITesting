@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     machine: 
-      - enabled: true
+      enabled: true
   deploy:
     machine:
       enabled: true
@@ -10,16 +10,3 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: ssh $SSH_USER@$SSH_HOST -p 17536
-
-
-workflows:
-  version: 2
-  build-and-deploy:
-    jobs:
-      - build
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only: master
